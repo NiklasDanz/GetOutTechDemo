@@ -1,0 +1,12 @@
+PODS:
+  - GooglePlacesSearchController (0.1.7)
+
+DEPENDENCIES:
+  - GooglePlacesSearchController
+
+SPEC CHECKSUMS:
+  GooglePlacesSearchController: 0ac4fedf1582d2e44329c417a6eed80ccf62d716
+
+PODFILE CHECKSUM: 4f116c35705f53b15f900c3b1464102c24b680f8
+
+COCOAPODS: 1.4.0

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FC69A5EC3BA7D73FCE58B3C /* Pods_GetOutTechTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1301C2744CEA6506FA38E85F /* Pods_GetOutTechTest.framework */; };
+		6B2D2CCD20236CA0007B2863 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D2CCC20236CA0007B2863 /* LocationSearchViewController.swift */; };
 		6B872AF52020A7DE00225FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B872AF42020A7DE00225FEA /* AppDelegate.swift */; };
 		6B872AF72020A7DE00225FEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B872AF62020A7DE00225FEA /* ViewController.swift */; };
 		6B872AFA2020A7DE00225FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B872AF82020A7DE00225FEA /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1301C2744CEA6506FA38E85F /* Pods_GetOutTechTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetOutTechTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528B4F4C9960F7C8CB51CCDE /* Pods-GetOutTechTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetOutTechTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GetOutTechTest/Pods-GetOutTechTest.release.xcconfig"; sourceTree = "<group>"; };
+		6B2D2CCC20236CA0007B2863 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
 		6B872AF12020A7DE00225FEA /* GetOutTechTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetOutTechTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B872AF42020A7DE00225FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B872AF62020A7DE00225FEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		6B872AFB2020A7DE00225FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B872AFE2020A7DE00225FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B872B002020A7DE00225FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9716F8AE6BAEB80F0F20B9 /* Pods-GetOutTechTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetOutTechTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GetOutTechTest/Pods-GetOutTechTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC69A5EC3BA7D73FCE58B3C /* Pods_GetOutTechTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		337BB1421CAE64B6686B7586 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF9716F8AE6BAEB80F0F20B9 /* Pods-GetOutTechTest.debug.xcconfig */,
+				528B4F4C9960F7C8CB51CCDE /* Pods-GetOutTechTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B872AE82020A7DE00225FEA = {
 			isa = PBXGroup;
 			children = (
 				6B872AF32020A7DE00225FEA /* GetOutTechTest */,
 				6B872AF22020A7DE00225FEA /* Products */,
+				337BB1421CAE64B6686B7586 /* Pods */,
+				CB7E7161BB647288AB280EB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,21 @@
 			children = (
 				6B872AF42020A7DE00225FEA /* AppDelegate.swift */,
 				6B872AF62020A7DE00225FEA /* ViewController.swift */,
+				6B2D2CCC20236CA0007B2863 /* LocationSearchViewController.swift */,
 				6B872AF82020A7DE00225FEA /* Main.storyboard */,
 				6B872AFB2020A7DE00225FEA /* Assets.xcassets */,
 				6B872AFD2020A7DE00225FEA /* LaunchScreen.storyboard */,
 				6B872B002020A7DE00225FEA /* Info.plist */,
 			);
 			path = GetOutTechTest;
+			sourceTree = "<group>";
+		};
+		CB7E7161BB647288AB280EB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1301C2744CEA6506FA38E85F /* Pods_GetOutTechTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B872B032020A7DE00225FEA /* Build configuration list for PBXNativeTarget "GetOutTechTest" */;
 			buildPhases = (
+				B2BAD0870BC0794BC3EA9B4A /* [CP] Check Pods Manifest.lock */,
 				6B872AED2020A7DE00225FEA /* Sources */,
 				6B872AEE2020A7DE00225FEA /* Frameworks */,
 				6B872AEF2020A7DE00225FEA /* Resources */,
+				4872F79DC10F98FC432092F0 /* [CP] Embed Pods Frameworks */,
+				11A3F05EB415A6A10ABE31A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +127,11 @@
 					6B872AF02020A7DE00225FEA = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,12 +166,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11A3F05EB415A6A10ABE31A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetOutTechTest/Pods-GetOutTechTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4872F79DC10F98FC432092F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GetOutTechTest/Pods-GetOutTechTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GooglePlacesSearchController/GooglePlacesSearchController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesSearchController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GetOutTechTest/Pods-GetOutTechTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2BAD0870BC0794BC3EA9B4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetOutTechTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6B872AED2020A7DE00225FEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6B872AF72020A7DE00225FEA /* ViewController.swift in Sources */,
+				6B2D2CCD20236CA0007B2863 /* LocationSearchViewController.swift in Sources */,
 				6B872AF52020A7DE00225FEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +362,7 @@
 		};
 		6B872B042020A7DE00225FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9716F8AE6BAEB80F0F20B9 /* Pods-GetOutTechTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +378,7 @@
 		};
 		6B872B052020A7DE00225FEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528B4F4C9960F7C8CB51CCDE /* Pods-GetOutTechTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

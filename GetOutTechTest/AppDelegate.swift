@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         // Override point for customization after application launch.
+        if(UIApplication.instancesRespond(to: #selector(UIApplication.registerUserNotificationSettings(_:)))){
+            let notificationCategory:UIMutableUserNotificationCategory = UIMutableUserNotificationCategory()
+            notificationCategory.identifier = "INVITE_CATEGORY"
+            //registerting for the notification.
+            application.registerUserNotificationSettings(UIUserNotificationSettings(types:[.sound, .alert, .badge], categories: nil))
+        }
+        else{
+            //do iOS 7 stuff, which is pretty much nothing for local notifications.
+        }
+ 
         return true
     }
 
